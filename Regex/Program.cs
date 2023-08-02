@@ -22,7 +22,8 @@ internal class Program
                 email.UC2_Validate("@bridgelabz"); 
                 email.UC3_Validate(".co"); 
                 email.UC4_Validate("abc.xyz"); 
-               // email.UC4_Validate("abc"); 
+                email.UC5_Validate("abc.xyz@bridgelabz.co.in"); 
+               
                 break;
         }
       
