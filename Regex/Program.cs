@@ -1,4 +1,5 @@
 ﻿using RegexProblems;
+using RegexProblems.UserRegistrationProblem;
 
 internal class Program
 {
@@ -6,7 +7,8 @@ internal class Program
 
     private static void Main(string[] args)
     {
-        int num = 4;
+        
+        int num = 5;
         switch (num)
         {
             case 1:
@@ -41,6 +43,10 @@ internal class Program
             case 4:
                 ValidateArrayEmail array = new ValidateArrayEmail();
                 array.read(EmailArrayFilePath);
+                break;
+            case 5:
+                UserValidation registration = new UserValidation();
+                registration.UC1_FirstName("Abc");
                 break;
         }
       
