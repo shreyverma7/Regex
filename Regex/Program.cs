@@ -19,6 +19,7 @@ internal class Program
             case 2:
                 ValidateEmail email = new ValidateEmail();
                 email.UC1_Validate("abc"); 
+                email.UC2_Validate("@bridgelabz"); 
                 break;
         }
       
