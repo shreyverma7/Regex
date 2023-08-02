@@ -2,9 +2,11 @@
 
 internal class Program
 {
+    static string EmailArrayFilePath = @"D:\Bridgelabz Problem statement\Regex\Regex\EmailArray.txt"; 
+
     private static void Main(string[] args)
     {
-        int num = 2;
+        int num = 4;
         switch (num)
         {
             case 1:
@@ -23,7 +25,22 @@ internal class Program
                 email.UC3_Validate(".co"); 
                 email.UC4_Validate("abc.xyz"); 
                 email.UC5_Validate("abc.xyz@bridgelabz.co.in"); 
-               
+                break;
+            case 3:
+                ValidateEmail check = new ValidateEmail();
+                check.UC5_Validate("abc@yahoo.com");
+                check.UC5_Validate("abc-100@yahoo.com");
+                check.UC5_Validate("abc.100@yahoo.com");
+                check.UC5_Validate("abc111@abc.com");
+                check.UC5_Validate("abc-100@abc.net");
+                check.UC5_Validate("abc.100@abc.com.au");
+                check.UC5_Validate("abc@1.com");
+                check.UC5_Validate("abc@gmail.com.com");
+                check.UC5_Validate("abc+100@gmail.com");
+                break;
+            case 4:
+                ValidateArrayEmail array = new ValidateArrayEmail();
+                array.read(EmailArrayFilePath);
                 break;
         }
       
