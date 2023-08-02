@@ -20,6 +20,7 @@ internal class Program
                 ValidateEmail email = new ValidateEmail();
                 email.UC1_Validate("abc"); 
                 email.UC2_Validate("@bridgelabz"); 
+                email.UC3_Validate(".co"); 
                 break;
         }
       
