@@ -7,7 +7,9 @@ internal class Program
         Console.WriteLine("Regex Functionality");
         ValidatePincode validatePincode = new ValidatePincode();
         validatePincode.UC1_Validate("601201");
-        validatePincode.UC2_Validate("601201");
+        validatePincode.UC2_Validate("H601201");
+        validatePincode.UC3_Validate("601201H");
+
 
 
     }
