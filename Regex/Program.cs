@@ -55,8 +55,13 @@ internal class Program
                 Console.WriteLine("Enter Email :");
                 // string emailadd = Console.ReadLine();
                 // check.UC5_Validate(emailadd);
-                registration.UC4_Mobile("91 8754875487");
-                registration.UC4_Mobile("8754875487");
+                Console.WriteLine("Enter Mobile :");//1234567890 or 91 1234567890
+                //string mobiles = Console.ReadLine();
+                //registration.UC4_Mobile(mobiles);
+                Console.WriteLine("Enter Password of Minimum 8 digit");
+                string pass = Console.ReadLine();
+                registration.UC5_Password(pass);
+               
                 break;
         }
       
