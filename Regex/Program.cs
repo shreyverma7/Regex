@@ -53,8 +53,10 @@ internal class Program
                 //  string Last = Console.ReadLine();
                 //  registration.UC2_LastName(Last);
                 Console.WriteLine("Enter Email :");
-                string emailadd = Console.ReadLine();
-                check.UC5_Validate(emailadd);
+                // string emailadd = Console.ReadLine();
+                // check.UC5_Validate(emailadd);
+                registration.UC4_Mobile("91 8754875487");
+                registration.UC4_Mobile("8754875487");
                 break;
         }
       
