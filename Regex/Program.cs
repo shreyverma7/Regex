@@ -46,7 +46,8 @@ internal class Program
                 break;
             case 5:
                 UserValidation registration = new UserValidation();
-                registration.UC1_FirstName("Abc");
+                registration.UC1_FirstName("Shrey");
+                registration.UC2_LastName("Verma");
                 break;
         }
       

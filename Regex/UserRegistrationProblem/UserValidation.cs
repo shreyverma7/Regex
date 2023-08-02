@@ -10,9 +10,19 @@ namespace RegexProblems.UserRegistrationProblem
     internal class UserValidation
     {
         string uc1_FirstName = "^[A-Z]{1}[a-z]{2,}$";
+        string uc2_LastName = "^[A-Z]{1}[a-z]{2,}$";
+
         public void UC1_FirstName(string input)
         {
             bool result = Regex.IsMatch(input, uc1_FirstName);
+            if (result)
+                Console.WriteLine("Validation Successful");
+            else
+                Console.WriteLine("Validation UnSuccessful");
+        }
+        public void UC2_LastName(string input)
+        {
+            bool result = Regex.IsMatch(input, uc2_LastName);
             if (result)
                 Console.WriteLine("Validation Successful");
             else
