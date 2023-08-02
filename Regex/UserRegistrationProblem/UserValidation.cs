@@ -14,6 +14,7 @@ namespace RegexProblems.UserRegistrationProblem
         string uc5_Password = "^[A-Za-z]{8,}$";  
         string uc6_PasswordCap = "^(?=.*[A-Z]).{8,}$"; 
         string uc7_PasswordNum = "^(?=.*\\d)(?=.*[A-Z]).{8,}$"; 
+        string uc7_PasswordCapNumSym = "^(?=.*\\d)(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$"; 
 
         string uc4_Mobile = "^[0-9]{2}[ ]{1}[0-9]{10}$ || ^[0-9]{10}$";
 
@@ -43,7 +44,7 @@ namespace RegexProblems.UserRegistrationProblem
         }
         public void UC5_Password(string input)
         {
-            bool result = Regex.IsMatch(input, uc7_PasswordNum);
+            bool result = Regex.IsMatch(input, uc7_PasswordCapNumSym);
             if (result)
                 Console.WriteLine("Validation Successful");
             else
