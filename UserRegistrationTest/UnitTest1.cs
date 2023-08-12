@@ -1,5 +1,6 @@
 using RegexProblems;
 using RegexProblems.UserRegistrationProblem;
+using System.ComponentModel.DataAnnotations;
 
 namespace UserRegistrationTest
 {
@@ -93,7 +94,19 @@ namespace UserRegistrationTest
             }
             Assert.AreEqual(value, "HAPPY");
         }
-        
-       
+        [Test]
+        public void TestAllTrueEmails()
+        {
+            string[] input = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
+                "abc-100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
+            UserValidation trueEmails = new UserValidation();
+            foreach (var item in input)
+            {
+                bool result = trueEmails.UC6_Email(item);
+                Assert.IsTrue(result);
+            }
+        }
+
+
     }
 }
